@@ -1,0 +1,22 @@
+#maze
+{
+    padding: 0;
+    margin: auto;
+    display: block;
+}
+
+#win
+{
+    text-align: center;
+    color: red;
+    margin-top: -25%;
+    font-size: 30px;
+
+}
+
+#text
+{
+    padding: 0;
+    margin: auto;
+    display: block;
+}
