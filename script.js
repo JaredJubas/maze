@@ -3,7 +3,7 @@ var ctx = canvas.getContext("2d");
 var canvasText = document.getElementById("text");
 var context = canvasText.getContext("2d");
 var winText = document.getElementById("win");
-var rows = 30;
+var rows = 15;
 var cols = rows;
 var total = rows * cols;
 var nodes;
@@ -192,24 +192,21 @@ function keyActionDown(key) {
     oldCol = colCur;
     oldRow = rowCur;
     // left
+    moves += 1
     if (key.keyCode == 37 || key.keyCode == 65) {
         colCur -= 1;
-        moves += 1;
     }
     // up
     else if (key.keyCode == 38 || key.keyCode == 87) {
         rowCur -= 1;
-        moves += 1;
     }
     // right
     else if (key.keyCode == 39 || key.keyCode == 68) {
         colCur += 1;
-        moves += 1;
     }
     // down
     else if (key.keyCode == 40 || key.keyCode == 83) {
         rowCur += 1;
-        moves += 1;
     }
     if (colCur > cols - 1 || colCur < 0) {
         colCur = oldCol;
