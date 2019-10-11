@@ -1,13 +1,13 @@
 // The canvas
 var canvas = document.getElementById("maze");
 
-// Context variables
-var ctx = canvas.getContext("2d");
-var context = canvasText.getContext("2d");
-
 // Text variables
 var canvasText = document.getElementById("text");
 var winText = document.getElementById("win");
+
+// Context variables
+var ctx = canvas.getContext("2d");
+var context = canvasText.getContext("2d");
 
 // Size of maze variables
 var rows = 15;
